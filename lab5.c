@@ -1,13 +1,9 @@
-/*      
-SOFE 3980U Lab5
-Group 9
-CRN: 74026
-
-Rida Siddiqi -100825212
-Ishmeet kaur -100809450
-Muhammad Mujtaba Madad -100790195
- 	-
- */
+/* 
+Mohammad Al-Lozy, 100829387
+Faisal Akbar, 100846786
+Alexy Pichette, 100822470
+CRN: 74025
+*/
 
 #include <pthread.h>
 #include <stdlib.h>
