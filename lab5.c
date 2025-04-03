@@ -15,7 +15,7 @@ CRN: 74025
 #define NUM_RESOURCES 3
 #define MAX_ITERATIONS 5  // Limit number of iterations per process
 
-// Resource management structures
+
 int available_resources[NUM_RESOURCES];
 int allocated_resources[NUM_PROCESSES][NUM_RESOURCES] = {
     {0, 1, 0},  // P0
@@ -26,11 +26,11 @@ int allocated_resources[NUM_PROCESSES][NUM_RESOURCES] = {
 };
 
 int maximum_resources[NUM_PROCESSES][NUM_RESOURCES] = {
-    {7, 5, 3},  // P0
-    {3, 2, 2},  // P1
-    {9, 0, 2},  // P2
-    {2, 2, 2},  // P3
-    {4, 3, 3}   // P4
+    {7, 5, 3},  
+    {3, 2, 2},  
+    {9, 0, 2},  
+    {2, 2, 2},  
+    {4, 3, 3}   
 };
 
 int remaining_resources[NUM_PROCESSES][NUM_RESOURCES];
@@ -44,7 +44,7 @@ void computeRemainingResources() {
     }
 }
 
-// Print current system state
+
 void printSystemState() {
     printf("\n🔍 Available Resources:\n");
     for (int i = 0; i < NUM_RESOURCES; i++) {
@@ -69,7 +69,7 @@ void printSystemState() {
     }
 }
 
-// Check if the system is in a safe state
+
 bool isSystemSafe() {
     int work[NUM_RESOURCES];
     bool completed[NUM_PROCESSES] = {false};
